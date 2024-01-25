@@ -17,7 +17,7 @@ fs.readdir(folder, { withFileTypes: true }, (err, files) => {
           console.log(
             fileName +
               ' - ' +
-              path.extname(file.name) +
+              path.extname(file.name).slice(1) +
               ' - ' +
               sizeOfFile +
               ' kb',
